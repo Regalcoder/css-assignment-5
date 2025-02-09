@@ -1,0 +1,227 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7fdfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Left container styling */
+.left-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7fdfc;
+}
+
+/* Child container styling */
+.child-container {
+    width: 65%;
+    height: 30%;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+	gap: 20px;
+}
+
+/* Logo styling */
+.logo {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Header styling */
+.header {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Text styling */
+.text {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+	line-height: 25px;
+}
+
+/* Right container styling */
+.right-container {
+    flex: 1;
+    background-color: #f7fdfc;
+	display: flex;
+	align-items: center;
+}
+
+
+/* Form container styling */
+.form-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align form to the top */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-top: 20px; /* Space at the top of the form */
+	width: 85%;
+    height: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+	
+}
+
+/* Form styling */
+.form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align all contents horizontally */
+    gap: 20px;
+}
+
+/* Name group and info group styling */
+.name-group,
+.info-group {
+    display: flex;
+    gap: 20px; /* Space between elements */
+}
+
+/* Form group styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Center-align label and input */
+    gap: 5px;
+	justify-content: center;
+	width: 100%;
+}
+
+
+/* Label styling */
+.form-group label {
+    font-size: 14px;
+    color: #011C34;
+}
+
+/* Full-width form group styling...... 
+.form-group.full-width {
+    width: 97%;
+}*/
+
+/* Input and select styling */
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #011C34;
+    font-size: 14px;
+    color: #011C34;
+    text-align: left; /* Center-align text */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#gender, #dob{
+	width: 200px; this too
+}
+
+/* Input focus styling */
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #5fd2c7;
+    outline: none; /* Remove default outline */
+}
+
+/* Placeholder styling */
+.form-group input::placeholder {
+    color: #011C34;
+    opacity: 0.7; /* Slightly lighter for placeholders */
+}
+
+/* Register button styling */
+.register-button {
+    width: 420px;
+    height: 48px;
+    background-color: #2ec4b6;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.register-button:hover {
+    background-color: #24a99d; /* Slightly darker on hover */
+}
+
+/* Agreement text styling */
+.agreement-text {
+    font-size: 14px;
+    color: #011C34;
+    text-align: center;
+    margin-top: 10px; /* Space above the text */
+}
+
+/* Link styling */
+.link {
+    color: #2ec4b6;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
+
+    .left-container,
+    .right-container {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .child-container {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .form-container {
+        width: 100%; /* Full width on small screens */
+        padding-top: 35px; /* Reduce padding for smaller screens */
+		padding-bottom: 35px;
+    }
+
+    .name-group,
+    .info-group {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .form-group input,
+    .form-group select {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .register-button {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+
+
